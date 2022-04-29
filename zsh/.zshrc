@@ -13,3 +13,6 @@ fi
 
 # Enable vi mode
 bindkey -v
+
+# Default prompt
+PS1="%n@%m %1~ %# "
