@@ -1,13 +1,15 @@
+# Enable Antigen (package manager)
+source ~/.zsh/plugin/antigen.zsh
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen apply
+# End of plugins
 
-# Default to Python3
-alias python="python3"
-alias pip="pip3"
+# Load aliases
+if [ -f ~/.zsh_aliases ]; then
+  . ~/.zsh_aliases
+fi
 
 # Enable vi mode
 bindkey -v
-
-# Enable zsh-auto-suggestions
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# Enable zsh-syntax-highlighting
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
