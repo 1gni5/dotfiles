@@ -1,3 +1,6 @@
-# Default to Python3
+# Python
 alias python="python3"
 alias pip="pip3"
+
+# Neovim/Vim
+alias vim="nvim"
