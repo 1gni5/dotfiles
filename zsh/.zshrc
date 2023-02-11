@@ -6,10 +6,8 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 # End of plugins
 
-# Load aliases
-if [ -f ~/.zsh_aliases ]; then
-  . ~/.zsh_aliases
-fi
+# Source other zsh files
+if [ -f $HOME/.zshenv ]; then source $HOME/.zshenv; fi
 
 # Enable vi mode
 bindkey -v
